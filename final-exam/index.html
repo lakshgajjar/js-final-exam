@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Student Management System</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Smart Student Management System</h1>
+
+  <form id="studentForm" class="card">
+    <h2>Add / Update Student</h2>
+
+    <div class="grid">
+      <input type="text" id="id" placeholder="Student ID" required>
+      <input type="text" id="name" placeholder="Student Name" required>
+      <input type="text" id="father" placeholder="Father Name" required>
+      <input type="text" id="mobile" placeholder="Mobile Number" required>
+      <input type="email" id="email" placeholder="Email Address" required>
+      <input type="text" id="course" placeholder="Course Name" required>
+      <input type="text" id="city" placeholder="City" required>
+
+      <select id="gender" required>
+        <option value="">Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+
+      <input type="date" id="date" required>
+    </div>
+
+    <button type="submit">Save Student</button>
+  </form>
+
+  <input type="text" id="search" placeholder="Search by Name or ID">
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+          <th>City</th>
+          <th>Attendance</th>
+          <th>Marks</th>
+          <th>Fees</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
