@@ -39,8 +39,13 @@ function displayData(data = students) {
       <tr>
         <td>${s.id}</td>
         <td>${s.name}</td>
+        <td>${s.father}</td>
+        <td>${s.mobile}</td>
+        <td>${s.email}</td>
         <td>${s.course}</td>
         <td>${s.city}</td>
+        <td>${s.gender}</td>
+        <td>${s.date}</td>
         <td>${attendance}</td>
         <td>${marks}</td>
         <td>${fees}</td>
